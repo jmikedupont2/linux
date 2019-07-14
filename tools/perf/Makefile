@@ -17,7 +17,7 @@
 # We don't want to pass along options like -j:
 #
 unexport MAKEFLAGS
-
+CFLAGS := -fdump-tree-all-graph -save-temps --verbose
 #
 # Do a parallel build with multiple jobs, based on the number of CPUs online
 # in this system: 'make -j8' on a 8-CPU system, etc.
